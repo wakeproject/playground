@@ -4358,7 +4358,13 @@ return __MODULES['coffee-script'];
 }());
 //END COFFEESCRIPT
 
-    if (typeof window !== "undefined" && window.navigator && window.document) {
+    if (
+        //Normal browser enviroment
+        typeof window !== "undefined" && window.navigator && window.document
+        ||
+        //Webworkers enviroment
+        typeof onmessage !== "undefined" && typeof postMessage !== "undefined"
+       ) {
         // Browser action
         getXhr = function () {
             //Would love to dump the ActiveX crap in here. Need IE 6 to die first.
@@ -4420,7 +4426,7 @@ return __MODULES['coffee-script'];
         fetchText = function (path, callback) {
             callback(fs.readFileSync(path, 'utf8'));
         };
-    }
+   }
 //>>excludeEnd('excludeCoffeeScript')
 
     define({
