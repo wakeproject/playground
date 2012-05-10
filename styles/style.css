@@ -1,0 +1,78 @@
+#slideshow  {
+    background-color:  rgba(0,0,0,0.5);
+}
+
+#mainimage { /* main image container */
+    width: 640px; /* same width of all big pictures */
+    height: 500px; /* same height of all big pictures */
+    float: left;
+    position: relative; /* necessary to display the caption over the photo */
+    overflow: hidden;
+}
+
+#caption { /* image caption */
+    background-color: #222222;
+    color: white;
+    width: 620px; /* necessary to display properly in IE - don't set it on 100& but 640 (#main_image width) - 20 (left+right #caption padding)*/
+    padding: 0px 10px 10px 10px;
+    position: absolute; /* placing it at the bottom of the big image */
+    bottom: 0;
+    left: 0;
+}
+
+#caption p {
+    margin: 0; /* necessary for Firefox */
+}
+
+#thumbnails { /* right thumbnails container */
+    float: right;
+    width: 260px;
+    background-color: #0f0f0f;
+}
+
+#thumbnails ul { /* list with thumbnails and titles */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#thumbnails ul li {
+    margin: 0;
+    padding: 12px 10px;
+    background-color: #0f0f0f0;
+    width: 240px;
+    float: left;
+}
+
+#thumbnails ul li img { /* the "real" thumbnails... the images */
+    border: 1px solid #333333;
+    padding: 5px;
+    background-color: #000000;
+    float: left;
+}
+
+#thumbnails ul li.hover { /* hover effect */
+    background-color: #222222;
+    cursor: pointer;
+}
+
+#thumbnails ul li.current { /* applying a different style for the current image */
+    background-color:  black;
+    cursor: default;
+}
+
+#thumbnails ul li.current a {
+    cursor: default; /* don't show the hand on links in the current image */
+}
+
+#thumbnails ul li .description { /* thumbnail title */
+    float: left;
+    margin-left: 10px;
+    padding: 0;
+    width: 160px;
+}
+
+#thumbnails ul li p { /* thumbnail description... hidden because I'll show it elsewhere (in the caption) */
+    display:  none;
+}
+
