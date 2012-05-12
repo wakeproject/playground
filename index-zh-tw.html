@@ -1,0 +1,144 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>瓦克星：教育新世界</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="http://wahlque.org/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://wahlque.org/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://wahlque.org/styles/style.css" rel="stylesheet">
+    <link href="/styles/style.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://wahlque.org/favicon.ico">
+    <link rel="apple-touch-icon" href="http://wahlque.org/apple-touch-icon.png">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <h1><a class="brand" href="http://wahlque.org">瓦克星</a></h1>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="http://wahlque.org/">首頁</a></li>
+              <li><a href="http://blog.wahlque.org/en">網誌</a></li>
+              <li><a href="http://wiki.wahlque.org/">維基</a></li>
+              <li class="active"><a href="http://playground.wahlque.org/">園地</a></li>
+              <li><a href="https://github.com/Wahlque">原始碼</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          <div class="pull-right">
+            <div id="language-selector" class="btn-group">
+            <button id="language" class="btn"><span><img class="flag" src="http://wahlque.org/flags/en-us.png" /></span></button>
+            <button class="btn dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            </button>
+            <ul id="languages" class="dropdown-menu">
+            <li><a href="/index-en-us.html"><img class="flag" src="http://wahlque.org/flags/en-us.png" /> en-us</a></li>
+            <li><a href="/index-zh-cn.html"><img class="flag" src="http://wahlque.org/flags/zh-cn.png" /> zh-cn</a></li>
+            <li><a href="/index-zh-hk.html"><img class="flag" src="http://wahlque.org/flags/zh-hk.png" /> zh-hk</a></li>
+            <li><a href="/index-zh-sg.html"><img class="flag" src="http://wahlque.org/flags/zh-sg.png" /> zh-sg</a></li>
+            <li><a href="/index-zh-tw.html"><img class="flag" src="http://wahlque.org/flags/zh-tw.png" /> zh-tw</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="slideshow" class="hero-unit span10">
+            <div id="mainimage">
+                <div id="caption"></div>
+            </div>
+            <div id="thumbnails">
+                <ul>
+                    <li>
+                        <a href="/images/slideshow/twilight.png"><img src="/images/slideshow/twilight.th.png" alt="晨昏線" /></a>
+                        <div class="description">
+                            <p>瓦克星上的白天和黑夜</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/images/slideshow/terra.png"><img src="/images/slideshow/terra.th.png" alt="大陸與海洋" /></a>
+                        <div class="description">
+                            <p>瓦克星上的大陸和海洋</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/images/slideshow/tree.png"><img src="/images/slideshow/tree.th.png" alt="樹" /></a>
+                        <div class="description">
+                            <p>用L-系統生成的樹</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+      </div>
+
+      <div id="tutorials" class="span12 aligncenter">
+        <div id="tutorials-left" class="span4">
+          <h3>概念驗證</h3>
+          <ul>
+          <li><a href='/poc/orbits/'>限定性三體問題的軌道</a>
+          <li><a href='/poc/plant2d'>一棵樹</a>
+          <li><a href='/poc/weather'>實驗性的模擬行星氣候</a>（警告：程序需要一分鐘初始化，同時每步計算需要一分鐘）
+          </ul>
+
+          <h3>CoffeeScript演示</h3>
+          <ul>
+          <li><a href='/tutorials/coffeescript/001-hello-world/'>Hello World</a>
+          <li><a href='/tutorials/coffeescript/002-using-modules/?a=1&b=2'>使用模塊</a>
+          <li><a href='/tutorials/coffeescript/003-qwery-bonzo-bean/'>Qwery, Bonzo, Bean</a>
+          <li><a href='/tutorials/coffeescript/004-webworkers/'>WebWorkers</a>
+          </ul>
+        </div>
+        <div id="tutorials-right" class="span4">
+          <h3>力學演示</h3>
+          <ul>
+          <li><a href='/tutorials/mechanics/001-binary-stars/'>雙星系統</a>
+          <li><a href='/tutorials/mechanics/002-restricted-3-bodies/'>雙星系統中的行星</a>
+          <li><a href='/tutorials/mechanics/003-twilight-zone/'>行星上的晨昏線</a>
+          </ul>
+
+          <h3>計算圖形學演示</h3>
+          <ul>
+          <li><a href='/tutorials/graphics/001-terrain-gen/'>地貌生成</a>
+          </ul>
+
+          <h3>大氣科學演示</h3>
+          <ul>
+          <li><a href='/tutorials/atmospheric/001-balanced-temperature/'>行星上溫度的緯向分布</a>
+          </ul>
+        </div>
+        <div id="notices" class="span3">
+          <h3>通告</h3>
+        </div>
+      </div>
+    </div> <!-- /container -->
+
+    <script src="http://wahlque.org/javascripts/jquery-1.7.2.min.js"></script>
+    <script src="/javascripts/triqui.js"></script>
+    <script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-27097299-1']);
+_gaq.push(['_setDomainName', 'playground.wahlque.org']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+    </script>
+</body>
+</html>
