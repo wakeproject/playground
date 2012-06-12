@@ -41,6 +41,8 @@ Assuming your github account is GREATECODER
 ```bash
 git clone git@github.com:GREATECODER/playground.git
 cd playground
+git submodule init
+git submodule update
 antinode
 ```
 now you can visit http://localhost:8080/
